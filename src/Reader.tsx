@@ -203,6 +203,8 @@ const Reader = ({
     };
 
     const jumpToHighlightArea = (area: HighlightArea) => {
+      // TODO: This is a hacky way to get the start offset of the page
+      // @ts-ignore
       const startOffset = virtualizer.getOffsetForIndex(
         area.pageIndex,
         "start"

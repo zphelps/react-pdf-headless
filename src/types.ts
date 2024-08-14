@@ -60,7 +60,7 @@ export interface RenderPageProps {
 export type RenderPage = (props: RenderPageProps) => React.ReactNode;
 
 export interface ReaderPageProps {
-  virtualItem: VirtualItem;
+  virtualItem: VirtualItem<any>;
   viewports: Array<PageViewport> | null;
   scale: number | undefined;
   rotation: number;
